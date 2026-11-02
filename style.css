@@ -1765,6 +1765,24 @@ img {
   }
 }
 
+
+.toast-bag-icon {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 50%;
+  background: var(--brand-purple-soft, #EDE9FE);
+  color: var(--brand-purple, #7C3AED);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.15);
+}
+
+.toast-bag-icon svg {
+  stroke: var(--brand-purple, #7C3AED);
+}
+
 .toast-avatar-img {
   width: 44px;
   height: 44px;

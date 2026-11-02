@@ -1200,7 +1200,13 @@
        LIVE PURCHASE TOAST (BOTTOM-LEFT)
        ========================================================================== -->
   <div id="live-purchase-toast" class="live-toast" aria-live="polite">
-    <img src="img/avatar-01.webp" onerror="this.src='img/avatar-01.png'" id="toast-avatar" class="toast-avatar-img" alt="Acquirente" width="1254" height="1254" loading="lazy">
+    <div class="toast-bag-icon" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <path d="M16 10a4 4 0 0 1-8 0"></path>
+      </svg>
+    </div>
     <div class="toast-body">
       <div class="toast-buyer-name" id="toast-name">Marco T. da Milano</div>
       <div class="toast-item-desc" id="toast-desc">ha appena acquistato il <strong>Bundle Completo</strong></div>
@@ -1233,7 +1239,7 @@
   <div id="lightbox-modal" class="lightbox-modal" onclick="closeLightbox(event)">
     <div class="lightbox-content-wrapper" onclick="event.stopPropagation()">
       <button class="lightbox-close-btn" onclick="closeLightbox()">&times;</button>
-      <img id="lightbox-img" src="" alt="Mappa Ingrandita" class="lightbox-img">
+      <img id="lightbox-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3C/svg%3E" alt="Mappa Ingrandita" class="lightbox-img" width="1200" height="800" loading="lazy">
       <div id="lightbox-caption" class="lightbox-caption"></div>
     </div>
   </div>
@@ -1254,12 +1260,12 @@
 
     // 2. LIVE SALES TOAST NOTIFICATIONS (Cicla ogni 8-10 secondi)
     const buyers = [
-      { name: "Marco T. da Milano", desc: "ha acquistato il Bundle Totale (300 Mappe)", time: "2 minuti fa", avatar: "img/avatar-01.webp" },
-      { name: "Francesca B. da Bologna", desc: "ha acquistato il Bundle Totale + Combo Audio", time: "5 minuti fa", avatar: "img/avatar-02.webp" },
-      { name: "Matteo R. da Roma", desc: "ha acquistato il Bundle Totale (300 Mappe)", time: "7 minuti fa", avatar: "img/avatar-03.webp" },
-      { name: "Elena G. da Torino", desc: "ha acquistato il Bundle Totale (300 Mappe)", time: "11 minuti fa", avatar: "img/avatar-04.webp" },
-      { name: "Gianluca M. da Napoli", desc: "ha acquistato il Bundle Totale + Workbook 30 Giorni", time: "14 minuti fa", avatar: "img/avatar-01.webp" },
-      { name: "Chiara V. da Firenze", desc: "ha acquistato il Bundle Totale (300 Mappe)", time: "18 minuti fa", avatar: "img/avatar-02.webp" }
+      { name: "Marco T. da Milano", desc: "ha acquistato il Bundle Totale (300 Mappe)", time: "2 minuti fa" },
+      { name: "Francesca B. da Bologna", desc: "ha acquistato il Bundle Totale + Combo Audio", time: "5 minuti fa" },
+      { name: "Matteo R. da Roma", desc: "ha acquistato il Bundle Totale (300 Mappe)", time: "7 minuti fa" },
+      { name: "Elena G. da Torino", desc: "ha acquistato il Bundle Totale (300 Mappe)", time: "11 minuti fa" },
+      { name: "Gianluca M. da Napoli", desc: "ha acquistato il Bundle Totale + Workbook 30 Giorni", time: "14 minuti fa" },
+      { name: "Chiara V. da Firenze", desc: "ha acquistato il Bundle Totale (300 Mappe)", time: "18 minuti fa" }
     ];
 
     let buyerIdx = 0;
@@ -1267,15 +1273,13 @@
     const toastName = document.getElementById('toast-name');
     const toastDesc = document.getElementById('toast-desc');
     const toastTime = document.getElementById('toast-time');
-    const toastAvatar = document.getElementById('toast-avatar');
-
+    
     function showNextToast() {
       const b = buyers[buyerIdx];
       toastName.textContent = b.name;
       toastDesc.innerHTML = b.desc;
       toastTime.textContent = b.time;
-      toastAvatar.src = b.avatar;
-      
+            
       toast.classList.add('visible');
       
       setTimeout(() => {
