@@ -2147,3 +2147,300 @@ img {
   color: #DDD6FE !important;
 }
 
+
+
+/* ==========================================================================
+   CANONICAL HORIZONTAL EDITORIAL CAROUSEL (3:2 LANDSCAPE)
+   ========================================================================== */
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  margin: 32px 0 24px;
+  position: relative;
+}
+
+.carousel-track-continuous {
+  display: flex !important;
+  gap: 24px !important;
+  width: max-content !important;
+  animation: continuous-scroll 42s linear infinite !important;
+  padding: 10px 0 !important;
+}
+
+.carousel-track-continuous:hover {
+  animation-play-state: paused !important;
+}
+
+.sheet-slide-card {
+  width: 440px !important;
+  max-width: 86vw !important;
+  background: #FFFFFF !important;
+  border-radius: 16px !important;
+  padding: 12px 12px 14px 12px !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45) !important;
+  cursor: pointer !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+  flex-shrink: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.sheet-slide-card:hover {
+  transform: translateY(-6px) scale(1.02) !important;
+  box-shadow: 0 22px 50px rgba(124, 58, 237, 0.45) !important;
+}
+
+.sheet-slide-img {
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 1536 / 1024 !important;
+  object-fit: contain !important;
+  display: block !important;
+  border-radius: 10px !important;
+  border: 1px solid #E2E8F0 !important;
+  background: #FFFFFF !important;
+}
+
+.sheet-slide-title {
+  font-size: 0.95rem !important;
+  font-weight: 800 !important;
+  color: #1E293B !important;
+  margin-top: 10px !important;
+  text-align: center !important;
+  letter-spacing: -0.01em !important;
+}
+
+/* ==========================================================================
+   BASIC PLAN BUTTON: MUTED OPAQUE GREY
+   ========================================================================== */
+.btn-basic-muted {
+  background: #475569 !important;
+  color: #F8FAFC !important;
+  border: 1px solid #64748B !important;
+  box-shadow: 0 4px 14px rgba(71, 85, 105, 0.25) !important;
+  font-size: 0.95rem !important;
+  font-weight: 700 !important;
+  padding: 14px 20px !important;
+  border-radius: 12px !important;
+  display: block !important;
+  transition: background 0.2s ease, transform 0.2s ease !important;
+}
+
+.btn-basic-muted:hover {
+  background: #334155 !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 18px rgba(71, 85, 105, 0.35) !important;
+}
+
+/* ==========================================================================
+   UPSELL MODAL STYLES (SINGLE SCREEN MOBILE FIT - NO SCROLL)
+   ========================================================================== */
+.upsell-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10001;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+.upsell-modal.active {
+  display: flex !important;
+}
+
+.upsell-modal-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(8px);
+}
+
+.upsell-modal-card {
+  position: relative;
+  background: linear-gradient(155deg, #1E1B4B 0%, #2E1065 50%, #0F172A 100%);
+  border: 2px solid #8B5CF6;
+  border-radius: 20px;
+  padding: 18px 16px 14px;
+  max-width: 430px;
+  width: 100%;
+  max-height: 94vh;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.75), 0 0 35px rgba(139, 92, 246, 0.35);
+  color: #FFFFFF;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.upsell-modal-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #94A3B8;
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.2s;
+  padding: 4px 8px;
+}
+
+.upsell-modal-close:hover {
+  color: #FFFFFF;
+}
+
+.upsell-badge {
+  display: inline-block;
+  background: linear-gradient(90deg, #F59E0B, #EF4444);
+  color: #FFFFFF;
+  font-size: 0.72rem;
+  font-weight: 900;
+  padding: 4px 12px;
+  border-radius: 30px;
+  letter-spacing: 0.04em;
+  margin: 0 auto 6px;
+  text-transform: uppercase;
+}
+
+.upsell-title {
+  font-family: var(--font-title, sans-serif);
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #FFFFFF;
+  margin: 0 0 10px;
+}
+
+.upsell-title .hl-red {
+  color: #F87171;
+}
+
+.upsell-title .text-green {
+  color: #4ADE80;
+  text-shadow: 0 0 10px rgba(74, 222, 128, 0.4);
+}
+
+.upsell-compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 8px;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.upsell-compare-col {
+  border-radius: 12px;
+  padding: 10px 8px;
+  box-sizing: border-box;
+}
+
+.col-basic {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.col-premium {
+  background: linear-gradient(145deg, rgba(124, 58, 237, 0.32), rgba(76, 29, 149, 0.45));
+  border: 1.5px solid #A855F7;
+  box-shadow: 0 6px 18px rgba(124, 58, 237, 0.3);
+  position: relative;
+}
+
+.compare-tag {
+  position: absolute;
+  top: -8px;
+  right: 6px;
+  background: #F59E0B;
+  color: #1E1B4B;
+  font-size: 0.6rem;
+  font-weight: 900;
+  padding: 2px 6px;
+  border-radius: 6px;
+  letter-spacing: 0.02em;
+}
+
+.compare-head {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.col-basic .compare-head { color: #94A3B8; }
+.col-premium .compare-head { color: #E9D5FF; }
+
+.compare-price {
+  font-size: 1.25rem;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.col-basic .compare-price { color: #CBD5E1; }
+.col-premium .compare-price { color: #4ADE80; text-shadow: 0 0 10px rgba(74, 222, 128, 0.4); }
+
+.compare-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.col-basic .compare-list li { color: #94A3B8; }
+.col-premium .compare-list li { color: #F5F3FF; }
+
+.upsell-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.btn-cta-vip-modal {
+  background: linear-gradient(135deg, #16A34A 0%, #15803D 100%) !important;
+  color: #FFFFFF !important;
+  font-size: 0.96rem !important;
+  font-weight: 900 !important;
+  padding: 13px 14px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 22px rgba(22, 163, 74, 0.5) !important;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  border: none;
+  letter-spacing: -0.01em;
+}
+
+.btn-cta-vip-modal:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(22, 163, 74, 0.65) !important;
+}
+
+.btn-basic-skip {
+  color: #94A3B8;
+  font-size: 0.78rem;
+  text-decoration: underline;
+  padding: 4px;
+  display: inline-block;
+  transition: color 0.2s;
+}
+
+.btn-basic-skip:hover {
+  color: #E2E8F0;
+}
