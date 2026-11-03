@@ -18,11 +18,12 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
 
   <!-- Preload Critical CSS and Hero Mockup -->
-  <link rel="preload" href="style.css?v=20261103c" as="style">
+  <link rel="preload" href="style.css?v=20261103d" as="style">
   <link rel="preload" href="img/hero-mockup.webp?v=20261102" as="image" type="image/webp" fetchpriority="high">
 
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="style.css?v=20261103c">
+    <link rel="preload" as="image" href="img/hero-mockup.webp" type="image/webp" fetchpriority="high">
+  <link rel="stylesheet" href="style.css?v=20261103d">
 
   <!-- UTMify Script (Official Script for UTM & SCK Tracking) -->
   <script
@@ -84,7 +85,7 @@
       <div class="hero-mockup-container">
         <picture>
           <source srcset="img/hero-mockup.webp?v=20261102" type="image/webp">
-          <img src="img/hero-mockup.png?v=20261102" alt="Inglese Visivo PRO - Mockup del Kit Completo con Monitor, 4 Quaderni ad Anelli, Tablet e Smartphone" class="hero-mockup-img" width="1448" height="1086" fetchpriority="high" loading="eager">
+          <img src="img/hero-mockup.png?v=20261102" alt="Inglese Visivo PRO - Mockup del Kit Completo con Monitor, 4 Quaderni ad Anelli, Tablet e Smartphone" class="hero-mockup-img" width="1448" height="1086" fetchpriority="high" loading="eager" decoding="async">
         </picture>
       </div>
 
@@ -102,10 +103,10 @@
         <!-- Student Avatar Stack -->
         <div class="hero-avatar-stack">
           <div class="avatar-group">
-            <img src="img/avatar-01.webp" onerror="this.src='img/avatar-01.png'" alt="Studente Marco" width="1254" height="1254" loading="lazy">
-            <img src="img/avatar-02.webp" onerror="this.src='img/avatar-02.png'" alt="Studentessa Francesca" width="1254" height="1254" loading="lazy">
-            <img src="img/avatar-03.webp" onerror="this.src='img/avatar-03.png'" alt="Studente Matteo" width="1254" height="1254" loading="lazy">
-            <img src="img/avatar-04.webp" onerror="this.src='img/avatar-04.png'" alt="Studentessa Elena" width="1254" height="1254" loading="lazy">
+            <img src="img/avatar-01.webp" onerror="this.src='img/avatar-01.png'" alt="Studente Marco" width="1254" height="1254" loading="lazy" decoding="async">
+            <img src="img/avatar-02.webp" onerror="this.src='img/avatar-02.png'" alt="Studentessa Francesca" width="1254" height="1254" loading="lazy" decoding="async">
+            <img src="img/avatar-03.webp" onerror="this.src='img/avatar-03.png'" alt="Studente Matteo" width="1254" height="1254" loading="lazy" decoding="async">
+            <img src="img/avatar-04.webp" onerror="this.src='img/avatar-04.png'" alt="Studentessa Elena" width="1254" height="1254" loading="lazy" decoding="async">
           </div>
           <span class="avatar-group-text">Unisciti a oltre 2.450 professionisti e viaggiatori italiani</span>
         </div>
@@ -159,7 +160,7 @@
 
       <div class="gallery-grid">
         <div class="action-card">
-          <img src="img/whatsapp-photo-01.webp" onerror="this.src='img/whatsapp-photo-01.png'" alt="Riunione di lavoro in Zoom con mappe mentali" class="action-card-img" loading="lazy" width="1254" height="1254">
+          <img src="img/whatsapp-photo-01.webp" onerror="this.src='img/whatsapp-photo-01.png'" alt="Riunione di lavoro in Zoom con mappe mentali" class="action-card-img" loading="lazy" width="1254" height="1254" decoding="async">
           <div class="action-card-body">
             <span class="action-card-tag">In Ufficio & Zoom</span>
             <h3 class="action-card-title">Zero esitazioni durante le videochiamate internazionali</h3>
@@ -168,7 +169,7 @@
         </div>
 
         <div class="action-card">
-          <img src="img/whatsapp-photo-02.webp" onerror="this.src='img/whatsapp-photo-02.png'" alt="Studio su iPad in caffetteria" class="action-card-img" loading="lazy" width="1254" height="1254">
+          <img src="img/whatsapp-photo-02.webp" onerror="this.src='img/whatsapp-photo-02.png'" alt="Studio su iPad in caffetteria" class="action-card-img" loading="lazy" width="1254" height="1254" decoding="async">
           <div class="action-card-body">
             <span class="action-card-tag">Su Tablet & Mobile</span>
             <h3 class="action-card-title">Ripassa 2 mappe mentre prendi un caffè</h3>
@@ -177,7 +178,7 @@
         </div>
 
         <div class="action-card">
-          <img src="img/whatsapp-photo-03.webp" onerror="this.src='img/whatsapp-photo-03.png'" alt="Quaderno stampato e rilegato su scrivania" class="action-card-img" loading="lazy" width="1254" height="1254">
+          <img src="img/whatsapp-photo-03.webp" onerror="this.src='img/whatsapp-photo-03.png'" alt="Quaderno stampato e rilegato su scrivania" class="action-card-img" loading="lazy" width="1254" height="1254" decoding="async">
           <div class="action-card-body">
             <span class="action-card-tag">Stampabile A4 ad Alta Risoluzione</span>
             <h3 class="action-card-title">Il tuo raccoglitore personale da sfogliare</h3>
@@ -291,7 +292,7 @@
             </ul>
           </div>
           <div>
-            <img src="img/mapa-tempi-verbali.webp?v=20261103c" onerror="this.src='img/mapa-tempi-verbali.png'" alt="Mappa Mentale Tempi Verbali Inglese" style="border-radius: var(--radius-md); box-shadow: var(--shadow-sm); width: 100%; cursor: pointer;" onclick="openLightbox(this.src, 'Mappa Mentale: English Verb Tenses')" width="1536" height="1024" loading="lazy">
+            <img src="img/mapa-tempi-verbali.webp?v=20261103d" onerror="this.src='img/mapa-tempi-verbali.png'" alt="Mappa Mentale Tempi Verbali Inglese" style="border-radius: var(--radius-md); box-shadow: var(--shadow-sm); width: 100%; cursor: pointer;" onclick="openLightbox(this.src, 'Mappa Mentale: English Verb Tenses')" width="1536" height="1024" loading="lazy" decoding="async">
           </div>
         </div>
       </div>
@@ -310,7 +311,7 @@
             </ul>
           </div>
           <div>
-            <img src="img/mapa-phrasal-verbs.webp?v=20261103c" onerror="this.src='img/mapa-phrasal-verbs.png'" alt="Mappa Mentale Phrasal Verbs" style="border-radius: var(--radius-md); box-shadow: var(--shadow-sm); width: 100%; cursor: pointer;" onclick="openLightbox(this.src, 'Mappa Mentale: Phrasal Verbs with GET')" width="1536" height="1024" loading="lazy">
+            <img src="img/mapa-phrasal-verbs.webp?v=20261103d" onerror="this.src='img/mapa-phrasal-verbs.png'" alt="Mappa Mentale Phrasal Verbs" style="border-radius: var(--radius-md); box-shadow: var(--shadow-sm); width: 100%; cursor: pointer;" onclick="openLightbox(this.src, 'Mappa Mentale: Phrasal Verbs with GET')" width="1536" height="1024" loading="lazy" decoding="async">
           </div>
         </div>
       </div>
@@ -329,7 +330,7 @@
             </ul>
           </div>
           <div>
-            <img src="img/mapa-business-zoom.webp?v=20261103c" onerror="this.src='img/mapa-business-zoom.png'" alt="Mappa Mentale Business English" style="border-radius: var(--radius-md); box-shadow: var(--shadow-sm); width: 100%; cursor: pointer;" onclick="openLightbox(this.src, 'Mappa Mentale: Business English & Zoom Calls')" width="1536" height="1024" loading="lazy">
+            <img src="img/mapa-business-zoom.webp?v=20261103d" onerror="this.src='img/mapa-business-zoom.png'" alt="Mappa Mentale Business English" style="border-radius: var(--radius-md); box-shadow: var(--shadow-sm); width: 100%; cursor: pointer;" onclick="openLightbox(this.src, 'Mappa Mentale: Business English & Zoom Calls')" width="1536" height="1024" loading="lazy" decoding="async">
           </div>
         </div>
       </div>
@@ -356,58 +357,58 @@
         
         <!-- Slide 1 -->
         <div class="sheet-slide-card" onclick="openLightbox('img/mapa-tempi-verbali.webp?v=20261102b', 'Modulo 1: English Verb Tenses Timeline')">
-          <img src="img/mapa-tempi-verbali.webp?v=20261103c" onerror="this.src='img/mapa-tempi-verbali.png'" alt="Mappa Tempi Verbali" class="sheet-slide-img" loading="eager" width="1536" height="1024">
+          <img src="img/mapa-tempi-verbali.webp?v=20261103d" onerror="this.src='img/mapa-tempi-verbali.png'" alt="Mappa Tempi Verbali" class="sheet-slide-img" loading="eager" width="1536" height="1024" decoding="async">
           <div class="sheet-slide-title">Tempi Verbali & Linee Temporali</div>
         </div>
 
         <!-- Slide 2 -->
         <div class="sheet-slide-card" onclick="openLightbox('img/mapa-phrasal-verbs.webp?v=20261102b', 'Modulo 2: Phrasal Verbs con GET')">
-          <img src="img/mapa-phrasal-verbs.webp?v=20261103c" onerror="this.src='img/mapa-phrasal-verbs.png'" alt="Mappa Phrasal Verbs" class="sheet-slide-img" loading="eager" width="1536" height="1024">
+          <img src="img/mapa-phrasal-verbs.webp?v=20261103d" onerror="this.src='img/mapa-phrasal-verbs.png'" alt="Mappa Phrasal Verbs" class="sheet-slide-img" loading="eager" width="1536" height="1024" decoding="async">
           <div class="sheet-slide-title">100 Phrasal Verbs Illustrati</div>
         </div>
 
         <!-- Slide 3 -->
         <div class="sheet-slide-card" onclick="openLightbox('img/mapa-false-friends.webp?v=20261102b', 'Modulo 4: Falsi Amici Italiano-Inglese')">
-          <img src="img/mapa-false-friends.webp?v=20261103c" onerror="this.src='img/mapa-false-friends.png'" alt="Mappa Falsi Amici" class="sheet-slide-img" loading="eager" width="1536" height="1024">
+          <img src="img/mapa-false-friends.webp?v=20261103d" onerror="this.src='img/mapa-false-friends.png'" alt="Mappa Falsi Amici" class="sheet-slide-img" loading="eager" width="1536" height="1024" decoding="async">
           <div class="sheet-slide-title">Falsi Amici & Errori Comuni</div>
         </div>
 
         <!-- Slide 4 -->
         <div class="sheet-slide-card" onclick="openLightbox('img/mapa-travel-airport.webp?v=20261102b', 'Bonus 1: Travel & Airport Guide')">
-          <img src="img/mapa-travel-airport.webp?v=20261103c" onerror="this.src='img/mapa-travel-airport.png'" alt="Mappa Travel English" class="sheet-slide-img" loading="eager" width="1536" height="1024">
+          <img src="img/mapa-travel-airport.webp?v=20261103d" onerror="this.src='img/mapa-travel-airport.png'" alt="Mappa Travel English" class="sheet-slide-img" loading="eager" width="1536" height="1024" decoding="async">
           <div class="sheet-slide-title">Guida Tascabile per Viaggiare</div>
         </div>
 
         <!-- Slide 5 -->
         <div class="sheet-slide-card" onclick="openLightbox('img/mapa-business-zoom.webp?v=20261102b', 'Modulo Business: Riunioni & Colloqui')">
-          <img src="img/mapa-business-zoom.webp?v=20261103c" onerror="this.src='img/mapa-business-zoom.png'" alt="Mappa Business Zoom" class="sheet-slide-img" loading="eager" width="1536" height="1024">
+          <img src="img/mapa-business-zoom.webp?v=20261103d" onerror="this.src='img/mapa-business-zoom.png'" alt="Mappa Business Zoom" class="sheet-slide-img" loading="eager" width="1536" height="1024" decoding="async">
           <div class="sheet-slide-title">Business English & Zoom Calls</div>
         </div>
 
         <!-- Slide 6 -->
         <div class="sheet-slide-card" onclick="openLightbox('img/mapa-verbi-irregolari.webp?v=20261102b', 'Bonus 3: Verbi Irregolari a Colori')">
-          <img src="img/mapa-verbi-irregolari.webp?v=20261103c" onerror="this.src='img/mapa-verbi-irregolari.png'" alt="Mappa Verbi Irregolari" class="sheet-slide-img" loading="eager" width="1536" height="1024">
+          <img src="img/mapa-verbi-irregolari.webp?v=20261103d" onerror="this.src='img/mapa-verbi-irregolari.png'" alt="Mappa Verbi Irregolari" class="sheet-slide-img" loading="eager" width="1536" height="1024" decoding="async">
           <div class="sheet-slide-title">Verbi Irregolari a Colori</div>
         </div>
 
         <!-- Duplicados para loop infinito continuo -->
         <div class="sheet-slide-card" onclick="openLightbox('img/mapa-tempi-verbali.webp?v=20261102b', 'Modulo 1: English Verb Tenses Timeline')">
-          <img src="img/mapa-tempi-verbali.webp?v=20261103c" onerror="this.src='img/mapa-tempi-verbali.png'" alt="Mappa Tempi Verbali" class="sheet-slide-img" loading="eager" width="1536" height="1024">
+          <img src="img/mapa-tempi-verbali.webp?v=20261103d" onerror="this.src='img/mapa-tempi-verbali.png'" alt="Mappa Tempi Verbali" class="sheet-slide-img" loading="eager" width="1536" height="1024" decoding="async">
           <div class="sheet-slide-title">Tempi Verbali & Linee Temporali</div>
         </div>
 
         <div class="sheet-slide-card" onclick="openLightbox('img/mapa-phrasal-verbs.webp?v=20261102b', 'Modulo 2: Phrasal Verbs con GET')">
-          <img src="img/mapa-phrasal-verbs.webp?v=20261103c" onerror="this.src='img/mapa-phrasal-verbs.png'" alt="Mappa Phrasal Verbs" class="sheet-slide-img" loading="eager" width="1536" height="1024">
+          <img src="img/mapa-phrasal-verbs.webp?v=20261103d" onerror="this.src='img/mapa-phrasal-verbs.png'" alt="Mappa Phrasal Verbs" class="sheet-slide-img" loading="eager" width="1536" height="1024" decoding="async">
           <div class="sheet-slide-title">100 Phrasal Verbs Illustrati</div>
         </div>
 
         <div class="sheet-slide-card" onclick="openLightbox('img/mapa-false-friends.webp?v=20261102b', 'Modulo 4: Falsi Amici Italiano-Inglese')">
-          <img src="img/mapa-false-friends.webp?v=20261103c" onerror="this.src='img/mapa-false-friends.png'" alt="Mappa Falsi Amici" class="sheet-slide-img" loading="eager" width="1536" height="1024">
+          <img src="img/mapa-false-friends.webp?v=20261103d" onerror="this.src='img/mapa-false-friends.png'" alt="Mappa Falsi Amici" class="sheet-slide-img" loading="eager" width="1536" height="1024" decoding="async">
           <div class="sheet-slide-title">Falsi Amici & Errori Comuni</div>
         </div>
 
         <div class="sheet-slide-card" onclick="openLightbox('img/mapa-travel-airport.webp?v=20261102b', 'Bonus 1: Travel & Airport Guide')">
-          <img src="img/mapa-travel-airport.webp?v=20261103c" onerror="this.src='img/mapa-travel-airport.png'" alt="Mappa Travel English" class="sheet-slide-img" loading="eager" width="1536" height="1024">
+          <img src="img/mapa-travel-airport.webp?v=20261103d" onerror="this.src='img/mapa-travel-airport.png'" alt="Mappa Travel English" class="sheet-slide-img" loading="eager" width="1536" height="1024" decoding="async">
           <div class="sheet-slide-title">Guida Tascabile per Viaggiare</div>
         </div>
 
@@ -556,7 +557,7 @@
           <div class="bonus-image-wrapper">
             <picture>
               <source srcset="img/bonus-1.webp?v=20261102" type="image/webp">
-              <img src="img/bonus-1.png?v=20261102" alt="Bonus 1 - Guida Tascabile per Viaggiare in Inglese" width="1448" height="1086" loading="lazy">
+              <img src="img/bonus-1.png?v=20261102" alt="Bonus 1 - Guida Tascabile per Viaggiare in Inglese" width="1448" height="1086" loading="lazy" decoding="async">
             </picture>
           </div>
           <span class="bonus-badge">Bonus #1 (Valore 27 €)</span>
@@ -569,7 +570,7 @@
           <div class="bonus-image-wrapper">
             <picture>
               <source srcset="img/bonus-2.webp?v=20261102" type="image/webp">
-              <img src="img/bonus-2.png?v=20261102" alt="Bonus 2 - 500 Frasi Più Usate in Inglese" width="1448" height="1086" loading="lazy">
+              <img src="img/bonus-2.png?v=20261102" alt="Bonus 2 - 500 Frasi Più Usate in Inglese" width="1448" height="1086" loading="lazy" decoding="async">
             </picture>
           </div>
           <span class="bonus-badge">Bonus #2 (Valore 29 €)</span>
@@ -582,7 +583,7 @@
           <div class="bonus-image-wrapper">
             <picture>
               <source srcset="img/bonus-3.webp?v=20261102" type="image/webp">
-              <img src="img/bonus-3.png?v=20261102" alt="Bonus 3 - Piano Giornaliero di Studio" width="1448" height="1086" loading="lazy">
+              <img src="img/bonus-3.png?v=20261102" alt="Bonus 3 - Piano Giornaliero di Studio" width="1448" height="1086" loading="lazy" decoding="async">
             </picture>
           </div>
           <span class="bonus-badge">Bonus #3 (Valore 24 €)</span>
@@ -595,7 +596,7 @@
           <div class="bonus-image-wrapper">
             <picture>
               <source srcset="img/bonus-4.webp?v=20261102" type="image/webp">
-              <img src="img/bonus-4.png?v=20261102" alt="Bonus 4 - 100 Phrasal Verbs Essenziali" width="1448" height="1086" loading="lazy">
+              <img src="img/bonus-4.png?v=20261102" alt="Bonus 4 - 100 Phrasal Verbs Essenziali" width="1448" height="1086" loading="lazy" decoding="async">
             </picture>
           </div>
           <span class="bonus-badge">Bonus #4 (Valore 19 €)</span>
@@ -608,7 +609,7 @@
           <div class="bonus-image-wrapper">
             <picture>
               <source srcset="img/bonus-5.webp?v=20261102" type="image/webp">
-              <img src="img/bonus-5.png?v=20261102" alt="Bonus 5 - 150 Espressioni Nativi e Aggiornamenti" width="1448" height="1086" loading="lazy">
+              <img src="img/bonus-5.png?v=20261102" alt="Bonus 5 - 150 Espressioni Nativi e Aggiornamenti" width="1448" height="1086" loading="lazy" decoding="async">
             </picture>
           </div>
           <span class="bonus-badge">Bonus #5 (Valore 28 €)</span>
@@ -669,29 +670,21 @@
         </p>
       </div>
 
-      <div class="whatsapp-phones-container">
+            <div class="whatsapp-phones-container">
         
-        <!-- Phone 1: Matteo da Bologna -->
+        <!-- Phone 1: Francesca B. da Roma -->
         <div class="whatsapp-phone-card">
           <picture>
-            <source srcset="img/whatsapp-chat-1.webp" type="image/webp">
-            <img src="img/whatsapp-chat-1.png" alt="Testimonianza WhatsApp Matteo R. da Bologna" width="390" height="760" loading="lazy">
+            <source srcset="img/whatsapp-chat-1.webp?v=20261103d" type="image/webp">
+            <img src="img/whatsapp-chat-1.png?v=20261103d" alt="Testimonianza WhatsApp Francesca B. da Roma" width="390" height="760" loading="eager" decoding="async">
           </picture>
         </div>
 
-        <!-- Phone 2: Francesca da Roma -->
+        <!-- Phone 2: Gianluca M. da Milano -->
         <div class="whatsapp-phone-card">
           <picture>
-            <source srcset="img/whatsapp-chat-2.webp" type="image/webp">
-            <img src="img/whatsapp-chat-2.png" alt="Testimonianza WhatsApp Francesca B. da Roma" width="390" height="760" loading="lazy">
-          </picture>
-        </div>
-
-        <!-- Phone 3: Gianluca da Napoli -->
-        <div class="whatsapp-phone-card">
-          <picture>
-            <source srcset="img/whatsapp-chat-3.webp" type="image/webp">
-            <img src="img/whatsapp-chat-3.png" alt="Testimonianza WhatsApp Gianluca M. da Milano" width="390" height="760" loading="lazy">
+            <source srcset="img/whatsapp-chat-3.webp?v=20261103d" type="image/webp">
+            <img src="img/whatsapp-chat-3.png?v=20261103d" alt="Testimonianza WhatsApp Gianluca M. da Milano" width="390" height="760" loading="eager" decoding="async">
           </picture>
         </div>
 
@@ -717,7 +710,7 @@
         <!-- Review 1 -->
         <div class="amazon-review-card">
           <div class="reviewer-profile">
-            <img src="img/avatar-01.webp" onerror="this.src='img/avatar-01.png'" alt="Marco T." class="reviewer-avatar" width="1254" height="1254" loading="lazy">
+            <img src="img/avatar-01.webp" onerror="this.src='img/avatar-01.png'" alt="Marco T." class="reviewer-avatar" width="1254" height="1254" loading="lazy" decoding="async">
             <div class="reviewer-details">
               <h4>Marco T.</h4>
               <span class="city">Milano • Ingegnere Gestionale</span>
@@ -736,7 +729,7 @@
         <!-- Review 2 -->
         <div class="amazon-review-card">
           <div class="reviewer-profile">
-            <img src="img/avatar-02.webp" onerror="this.src='img/avatar-02.png'" alt="Francesca B." class="reviewer-avatar" width="1254" height="1254" loading="lazy">
+            <img src="img/avatar-02.webp" onerror="this.src='img/avatar-02.png'" alt="Francesca B." class="reviewer-avatar" width="1254" height="1254" loading="lazy" decoding="async">
             <div class="reviewer-details">
               <h4>Francesca B.</h4>
               <span class="city">Bologna • Architetto & Creator</span>
@@ -755,7 +748,7 @@
         <!-- Review 3 -->
         <div class="amazon-review-card">
           <div class="reviewer-profile">
-            <img src="img/avatar-03.webp" onerror="this.src='img/avatar-03.png'" alt="Matteo R." class="reviewer-avatar" width="1254" height="1254" loading="lazy">
+            <img src="img/avatar-03.webp" onerror="this.src='img/avatar-03.png'" alt="Matteo R." class="reviewer-avatar" width="1254" height="1254" loading="lazy" decoding="async">
             <div class="reviewer-details">
               <h4>Matteo R.</h4>
               <span class="city">Roma • Consulente Finanziario</span>
@@ -774,7 +767,7 @@
         <!-- Review 4 -->
         <div class="amazon-review-card">
           <div class="reviewer-profile">
-            <img src="img/avatar-04.webp" onerror="this.src='img/avatar-04.png'" alt="Elena G." class="reviewer-avatar" width="1254" height="1254" loading="lazy">
+            <img src="img/avatar-04.webp" onerror="this.src='img/avatar-04.png'" alt="Elena G." class="reviewer-avatar" width="1254" height="1254" loading="lazy" decoding="async">
             <div class="reviewer-details">
               <h4>Elena G.</h4>
               <span class="city">Torino • Farmacista & Mamma</span>
@@ -882,7 +875,7 @@
             </div>
           </div>
 
-          <img src="img/mockup-basic.webp" onerror="this.src='img/mockup-basic.png'" alt="Piano Base" class="pricing-mockup-thumb" loading="lazy" width="1080" height="1080">
+          <img src="img/mockup-basic.webp" onerror="this.src='img/mockup-basic.png'" alt="Piano Base" class="pricing-mockup-thumb" loading="lazy" width="1080" height="1080" decoding="async">
 
           <ul class="plan-features-list">
             <li><span class="check-icon">✓</span> <strong>75 Mappe Mentali</strong> (Modulo 1: Grammatica Essenziale)</li>
@@ -915,7 +908,7 @@
           </div>
 
           <div class="premium-mockup-wrapper">
-            <img src="img/mockup-premium.webp?v=20261102" onerror="this.src='img/mockup-premium.png?v=20261102'" alt="Inglese Visivo PRO Completo" class="pricing-mockup-thumb" loading="lazy" width="1080" height="1080">
+            <img src="img/mockup-premium.webp?v=20261102" onerror="this.src='img/mockup-premium.png?v=20261102'" alt="Inglese Visivo PRO Completo" class="pricing-mockup-thumb" loading="lazy" width="1080" height="1080" decoding="async">
           </div>
 
           <ul class="plan-features-list plan-features-list-vip">
@@ -949,7 +942,7 @@
   <section class="section guarantee-section" id="garanzia">
     <div class="container">
       <div class="guarantee-box">
-        <img src="img/garanzia-7-giorni.webp" onerror="this.src='img/garanzia-7-giorni.png'" alt="Sigillo Ufficiale Garanzia 7 Giorni" class="guarantee-seal-img" loading="lazy" width="800" height="800">
+        <img src="img/garanzia-7-giorni.webp" onerror="this.src='img/garanzia-7-giorni.png'" alt="Sigillo Ufficiale Garanzia 7 Giorni" class="guarantee-seal-img" loading="lazy" width="800" height="800" decoding="async">
         <div class="guarantee-content">
           <div class="section-eyebrow" style="margin-bottom: 8px;">Protezione Totale 100%</div>
           <h2>Garanzia Soddisfatti o Rimborsati per 7 Giorni Interi</h2>
@@ -1171,7 +1164,7 @@
   <div id="lightbox-modal" class="lightbox-modal" onclick="closeLightbox(event)">
     <div class="lightbox-content-wrapper" onclick="event.stopPropagation()">
       <button class="lightbox-close-btn" onclick="closeLightbox()">&times;</button>
-      <img id="lightbox-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3C/svg%3E" alt="Mappa Ingrandita" class="lightbox-img" width="1200" height="800" loading="lazy">
+      <img id="lightbox-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3C/svg%3E" alt="Mappa Ingrandita" class="lightbox-img" width="1200" height="800" loading="lazy" decoding="async">
       <div id="lightbox-caption" class="lightbox-caption"></div>
     </div>
   </div>
@@ -1306,38 +1299,79 @@
   </script>
 
   <!-- UTM & Query Parameter Forwarding (Hotmart & Utmify Fail-Safe) -->
+    <!-- ==========================================================================
+       BULLETPROOF UTM & CHECKOUT PROPAGATION (SESSIONSTORAGE + DYNAMIC DELEGATION)
+       ========================================================================== -->
   <script>
     (function() {
-      function passUtmsToCheckout() {
-        var currentSearch = window.location.search;
-        if (!currentSearch) return;
-        var currentParams = new URLSearchParams(currentSearch);
-        if (currentParams.has('utm_source') && !currentParams.has('sck')) {
-          currentParams.set('sck', currentParams.get('utm_source'));
+      // 1. Capture and store UTMs in sessionStorage so they are never lost across refreshes
+      var utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'xcod', 'src', 'sck'];
+      var searchParams = new URLSearchParams(window.location.search);
+      
+      utmKeys.forEach(function(key) {
+        if (searchParams.has(key)) {
+          try { sessionStorage.setItem(key, searchParams.get(key)); } catch(e){}
         }
-        var links = document.querySelectorAll('a[href*="hotmart.com"], a[href*="pay."], [data-utmify-checkout="true"]');
+      });
+
+      // Special rule: if utm_source exists but sck does not, populate sck = utm_source
+      var currentSource = searchParams.get('utm_source') || (function(){ try { return sessionStorage.getItem('utm_source'); } catch(e){ return null; } })();
+      if (currentSource) {
+        try {
+          if (!sessionStorage.getItem('sck')) {
+            sessionStorage.setItem('sck', currentSource);
+          }
+        } catch(e){}
+      }
+
+      function getStoredUtms() {
+        var params = new URLSearchParams();
+        utmKeys.forEach(function(key) {
+          try {
+            var val = sessionStorage.getItem(key);
+            if (val) params.set(key, val);
+          } catch(e){}
+        });
+        return params;
+      }
+
+      function attachUtmsToAllLinks() {
+        var params = getStoredUtms();
+        if ([...params.keys()].length === 0) return;
+
+        var selectors = 'a[href*="hotmart.com"], a[href*="pay."], [data-utmify-checkout="true"]';
+        var links = document.querySelectorAll(selectors);
+        
         links.forEach(function(link) {
           try {
             var href = link.getAttribute('href');
             if (!href || href.startsWith('#')) return;
             var url = new URL(href, window.location.origin);
-            currentParams.forEach(function(value, key) {
+            params.forEach(function(val, key) {
               if (!url.searchParams.has(key)) {
-                url.searchParams.set(key, value);
+                url.searchParams.set(key, val);
               }
             });
             link.setAttribute('href', url.toString());
-          } catch(e) {}
+          } catch(err){}
         });
       }
-      window.addEventListener('DOMContentLoaded', passUtmsToCheckout);
-      window.addEventListener('load', passUtmsToCheckout);
+
+      // Run immediately, on DOM ready, on window load, and on click
+      attachUtmsToAllLinks();
+      document.addEventListener('DOMContentLoaded', attachUtmsToAllLinks);
+      window.addEventListener('load', attachUtmsToAllLinks);
+
+      // Event delegation: on any click on a checkout link, re-verify UTMs are present
       document.addEventListener('click', function(e) {
         var target = e.target.closest('a[href*="hotmart.com"], a[href*="pay."], [data-utmify-checkout="true"]');
         if (target) {
-          passUtmsToCheckout();
+          attachUtmsToAllLinks();
         }
       });
+
+      // Expose globally so modal open triggers it
+      window.refreshCheckoutUtms = attachUtmsToAllLinks;
     })();
   </script>
 
@@ -1393,6 +1427,7 @@
       var modal = document.getElementById('basic-upsell-modal');
       if (modal) {
         modal.classList.add('active');
+        if (window.refreshCheckoutUtms) window.refreshCheckoutUtms();
         document.body.style.overflow = 'hidden';
       }
     }

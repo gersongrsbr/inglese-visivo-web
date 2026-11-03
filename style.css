@@ -2444,3 +2444,40 @@ img {
 .btn-basic-skip:hover {
   color: #E2E8F0;
 }
+
+/* ==========================================================================
+   2-CARD CENTERED WHATSAPP TESTIMONIALS (LIGHT MODE)
+   ========================================================================== */
+.whatsapp-phones-container {
+  display: flex !important;
+  gap: 32px !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  flex-wrap: wrap !important;
+  max-width: 820px !important;
+  margin: 36px auto 0 !important;
+}
+
+.whatsapp-phone-card {
+  flex: 0 1 350px !important;
+  max-width: 370px !important;
+  width: 100% !important;
+  border-radius: 32px !important;
+  overflow: hidden !important;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.16) !important;
+  border: 5px solid #1E293B !important;
+  background: #FFFFFF !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+.whatsapp-phone-card:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 26px 58px rgba(0, 0, 0, 0.24) !important;
+}
+
+.whatsapp-phone-card picture,
+.whatsapp-phone-card img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+}
