@@ -1,25 +1,53 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+  <!-- UTMIFY Pure Tracking (Via Canonica 1 - CERO Meta Pixel directo en Web) -->
+  <script
+    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+    data-utmify-prevent-subids=""
+    async
+    defer
+  ></script>
+  <script>
+    window.pixelId = "6ae3f61fe1d93bfc2d9a3083";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Offerta Speciale di Salvataggio — Pacchetto Essenziale Chunks | Inglese Visivo PRO</title>
+  <title>Offerta di Salvataggio Esclusiva — Pacchetto Essenziale Chunks | Inglese Visivo PRO</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Preconnect and DNS Prefetch for Max Loading Speed -->
+  <link rel="preconnect" href="https://checkout.hotmart.com" crossorigin>
+  <link rel="dns-prefetch" href="https://checkout.hotmart.com">
+  <link rel="preconnect" href="https://cdn.utmify.com.br" crossorigin>
+  <link rel="dns-prefetch" href="https://cdn.utmify.com.br">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Preload Critical Mockup WebP -->
+  <link rel="preload" href="../img/mockup-downsell.webp" as="image" type="image/webp" fetchpriority="high">
+
+  <!-- Fonts & Stylesheet -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
   <style>
     body { background-color: var(--bg-primary); color: var(--text-dark); }
     .oto-wrapper { max-width: 760px; margin: 0 auto; padding: 24px 16px 80px; }
     .status-bar {
-      background: #FEE2E2; border: 2px dashed #EF4444; border-radius: var(--radius-md);
+      background: #FEF2F2; border: 2px dashed #EF4444; border-radius: var(--radius-md);
       padding: 16px 20px; text-align: center; margin-bottom: 24px;
     }
-    .status-bar h3 { color: #B91C1C; font-size: 1.05rem; font-weight: 800; margin-bottom: 4px; }
-    .status-bar p { color: #991B1B; font-size: 0.9rem; margin: 0; line-height: 1.4; }
+    .status-bar h3 { color: #DC2626; font-size: 1.05rem; font-weight: 800; margin-bottom: 4px; }
+    .status-bar p { color: #B91C1C; font-size: 0.9rem; margin: 0; line-height: 1.4; }
     .oto-card {
       background: var(--bg-card); border-radius: var(--radius-lg); padding: 32px 24px;
-      box-shadow: 0 10px 30px rgba(239, 68, 68, 0.08); border: 1px solid var(--border-color);
+      box-shadow: 0 10px 30px rgba(124, 58, 237, 0.08); border: 1px solid var(--border-color);
       margin-bottom: 24px;
     }
     .tag-badge {
@@ -31,7 +59,7 @@
       font-size: 1.75rem; font-weight: 900; line-height: 1.25; color: var(--text-dark);
       margin-bottom: 16px; text-align: center;
     }
-    .oto-headline span { color: #DC2626; }
+    .oto-headline span { color: var(--brand-purple); }
     .oto-sub {
       font-size: 1.05rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 24px; text-align: center;
     }
@@ -46,26 +74,20 @@
       color: #16A34A; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.85rem;
     }
     .pricing-box {
-      background: #FFF1F2; border: 2px solid #FECDD3;
+      background: var(--brand-purple-bg); border: 2px solid var(--brand-purple-soft);
       border-radius: var(--radius-md); padding: 20px; text-align: center; margin: 28px 0;
     }
     .price-old { font-size: 1.1rem; color: #9CA3AF; text-decoration: line-through; margin-right: 8px; }
-    .price-new { font-size: 2.2rem; font-weight: 900; color: #E11D48; }
+    .price-new { font-size: 2.2rem; font-weight: 900; color: var(--brand-purple); }
     .price-badge {
       display: inline-block; background: #DCFCE7; color: #15803D; font-size: 0.85rem; font-weight: 800;
       padding: 4px 10px; border-radius: var(--radius-full); margin-top: 6px;
     }
-    .btn-yes {
-      display: block; width: 100%; background: var(--cta-green); color: #fff; font-family: var(--font-title);
-      font-size: 1.15rem; font-weight: 800; text-align: center; padding: 18px 24px; border-radius: var(--radius-md);
-      text-decoration: none; box-shadow: var(--shadow-cta); transition: var(--transition-smooth); cursor: pointer; border: none;
+    #hotmart-sales-funnel {
+      min-height: 120px;
+      margin: 20px auto;
+      text-align: center;
     }
-    .btn-yes:hover { background: var(--cta-green-hover); transform: translateY(-2px); }
-    .btn-no {
-      display: block; text-align: center; color: var(--text-light); font-size: 0.85rem; margin-top: 14px;
-      text-decoration: underline; background: none; border: none; cursor: pointer; padding: 6px; width: 100%;
-    }
-    .btn-no:hover { color: #DC2626; }
     .guarantee-box {
       display: flex; align-items: center; gap: 16px; background: #F8FAFC; border: 1px solid #E2E8F0;
       border-radius: var(--radius-md); padding: 16px; margin-top: 24px;
@@ -80,13 +102,13 @@
 <div class="oto-wrapper">
   <!-- BLOQUE 1: BARRA DE ESTADO & CONFIRMACIÓN -->
   <div class="status-bar">
-    <h3>🛑 ASPETTA! NON VOGLIAMO CHE TU RINUNCI ALLA TUA SCIOLTEZZA.</h3>
-    <p>Comprendiamo che il pacchetto completo possa non essere la priorità in questo momento. Ti offriamo l'edizione essenziale ad un prezzo simbolico irripetibile.</p>
+    <h3>🛑 ATTENDI UN ATTIMO! NON ANDARTENE A MANI VUOTE...</h3>
+    <p>Capisco che l'Arsenale Completo a 37 € non facesse per te in questo momento. Ma non voglio che tu perda l'occasione di sbloccare il parlato.</p>
   </div>
 
   <div class="oto-card">
     <div style="text-align: center;">
-      <span class="tag-badge">OFFERTA DI SALVATAGGIO ESCLUSIVA</span>
+      <span class="tag-badge">OFFERTA DI SOCCORSO ESCLUSIVA</span>
     </div>
 
     <!-- BLOQUE 2 & 3: L'OPPORTUNITÀ ESSENZIALE -->
@@ -95,10 +117,7 @@
 
     <!-- BLOQUE 4: MOCKUP 3D HERO -->
     <div class="mockup-container">
-      <picture>
-        <source srcset="../img/mockup-downsell.webp" type="image/webp">
-        <img src="../img/mockup-downsell.png" alt="Pacchetto Essenziale Chunks di Salvataggio" width="700" height="460" loading="eager">
-      </picture>
+      <img src="../img/mockup-downsell.webp" alt="Pacchetto Essenziale Chunks di Salvataggio" width="700" height="460" loading="eager" fetchpriority="high">
     </div>
 
     <!-- BLOQUE 5: DESGLOSE DE CONTENIDO -->
@@ -127,19 +146,22 @@
       <div style="font-size: 0.9rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-bottom: 4px;">PREZZO SPECIALE DI SALVATAGGIO</div>
       <div>
         <span class="price-old">77,00 €</span>
-        <span class="price-new">29,90 €</span>
+        <span class="price-new">17,00 €</span>
       </div>
-      <div class="price-badge">SCONTO ECCEZIONALE DEL 65%</div>
+      <div class="price-badge">SCONTO ECCEZIONALE DEL 78%</div>
     </div>
 
-    <!-- BLOQUE 7: BOTONES DE 1-CLIC (WIDGET HOTMART) -->
+    <!-- BLOQUE 7: BOTONES 1-CLIC (HOTMART SALES FUNNEL WIDGET) -->
     <div id="hotmart-downsell-widget">
-      <a href="https://pay.hotmart.com" class="btn-yes" id="btn-downsell-yes">
-        SÌ! ACCETTO IL PACCHETTO ESSENZIALE A SOLI 29,90 € →
-      </a>
-      <a href="../grazie/" class="btn-no" id="btn-downsell-no">
-        No grazie, rifiuto anche questa offerta e desidero proseguire direttamente alla pagina di ringraziamento.
-      </a>
+      <!-- HOTMART - Sales Funnel Widget -->
+      <!--- sales funnel container --->
+      <div id="hotmart-sales-funnel"></div>
+      <!--- script load and setup --->
+      <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+      <script>
+      checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')
+      </script>
+      <!-- HOTMART - Sales Funnel Widget -->
     </div>
 
     <!-- BLOQUE 8: GARANTÍA 7 DÍAS -->

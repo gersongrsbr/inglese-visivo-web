@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+  <!-- UTMIFY Pure Tracking (Via Canonica 1 - CERO Meta Pixel directo en Web) -->
+  <script
+    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+    data-utmify-prevent-subids=""
+    async
+    defer
+  ></script>
+  <script>
+    window.pixelId = "6ae3f61fe1d93bfc2d9a3083";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Offerta Speciale Esclusiva — L'Arsenale delle Frasi Pronte | Inglese Visivo PRO</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Preconnect and DNS Prefetch for Max Loading Speed -->
+  <link rel="preconnect" href="https://checkout.hotmart.com" crossorigin>
+  <link rel="dns-prefetch" href="https://checkout.hotmart.com">
+  <link rel="preconnect" href="https://cdn.utmify.com.br" crossorigin>
+  <link rel="dns-prefetch" href="https://cdn.utmify.com.br">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Preload Critical Mockup WebP -->
+  <link rel="preload" href="../img/mockup-upsell1.webp" as="image" type="image/webp" fetchpriority="high">
+
+  <!-- Fonts & Stylesheet -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
   <style>
@@ -61,17 +89,11 @@
       display: inline-block; background: #DCFCE7; color: #15803D; font-size: 0.85rem; font-weight: 800;
       padding: 4px 10px; border-radius: var(--radius-full); margin-top: 6px;
     }
-    .btn-yes {
-      display: block; width: 100%; background: var(--cta-green); color: #fff; font-family: var(--font-title);
-      font-size: 1.15rem; font-weight: 800; text-align: center; padding: 18px 24px; border-radius: var(--radius-md);
-      text-decoration: none; box-shadow: var(--shadow-cta); transition: var(--transition-smooth); cursor: pointer; border: none;
+    #hotmart-sales-funnel {
+      min-height: 120px;
+      margin: 20px auto;
+      text-align: center;
     }
-    .btn-yes:hover { background: var(--cta-green-hover); transform: translateY(-2px); }
-    .btn-no {
-      display: block; text-align: center; color: var(--text-light); font-size: 0.85rem; margin-top: 14px;
-      text-decoration: underline; background: none; border: none; cursor: pointer; padding: 6px; width: 100%;
-    }
-    .btn-no:hover { color: #DC2626; }
     .guarantee-box {
       display: flex; align-items: center; gap: 16px; background: #F8FAFC; border: 1px solid #E2E8F0;
       border-radius: var(--radius-md); padding: 16px; margin-top: 24px;
@@ -111,10 +133,7 @@
 
     <!-- BLOQUE 4: MOCKUP 3D HERO -->
     <div class="mockup-container">
-      <picture>
-        <source srcset="../img/mockup-upsell1.webp" type="image/webp">
-        <img src="../img/mockup-upsell1.png" alt="L'Arsenale delle Frasi Pronte - 300 Chunks & 30 Audio Express" width="700" height="460" loading="eager">
-      </picture>
+      <img src="../img/mockup-upsell1.webp" alt="L'Arsenale delle Frasi Pronte - 300 Chunks & 30 Audio Express" width="700" height="460" loading="eager" fetchpriority="high">
     </div>
 
     <!-- BLOQUE 5: DESGLOSE DE CONTENIDO -->
@@ -152,16 +171,17 @@
       <div class="price-badge">RISPARMI IL 62% SOLO IN QUESTA PAGINA</div>
     </div>
 
-    <!-- BLOQUE 7: BOTONES DE 1-CLIC (WIDGET HOTMART) -->
-    <!-- Hotmart 1-Click Funnel Builder Widget Placeholder -->
+    <!-- BLOQUE 7: BOTONES 1-CLIC (HOTMART SALES FUNNEL WIDGET) -->
     <div id="hotmart-upsell-widget">
-      <!-- Fallback button: Grokbot's widget injects here -->
-      <a href="https://pay.hotmart.com" class="btn-yes" id="btn-upsell1-yes">
-        SÌ! AGGIUNGI L'ARSENALE DEI CHUNKS AL MIO ORDINE A SOLI 37,00 € →
-      </a>
-      <a href="../up2/" class="btn-no" id="btn-upsell1-no">
-        No grazie, preferisco continuare a tradurre parola per parola nella mia testa e fare scena muta all'estero...
-      </a>
+      <!-- HOTMART - Sales Funnel Widget -->
+      <!--- sales funnel container --->
+      <div id="hotmart-sales-funnel"></div>
+      <!--- script load and setup --->
+      <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+      <script>
+      checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')
+      </script>
+      <!-- HOTMART - Sales Funnel Widget -->
     </div>
 
     <!-- BLOQUE 8: GARANTÍA 7 DÍAS & FAQ -->
