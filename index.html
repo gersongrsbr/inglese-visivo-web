@@ -32,7 +32,7 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
 
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="style.css?v=20261105b">
+  <link rel="stylesheet" href="style.css?v=20261106c">
 </head>
 <body>
 
@@ -1053,37 +1053,37 @@
         <div class="wa-carousel-track" id="waTrack">
           <!-- Card 1: Francesca B. · Roma -->
           <div class="wa-card">
-            <img src="img/whatsapp-chat-1.webp?v=20261106" alt="Testimonianza WhatsApp Francesca B. - Roma" width="640" height="1138" loading="eager" decoding="async">
+            <img src="img/whatsapp-chat-1.webp?v=20261106c" alt="Testimonianza WhatsApp Francesca B. - Roma" width="640" height="1138" loading="eager" decoding="async">
           </div>
 
           <!-- Card 2: Gianluca M. · Milano -->
           <div class="wa-card">
-            <img src="img/whatsapp-chat-2.webp?v=20261106" alt="Testimonianza WhatsApp Gianluca M. - Milano" width="640" height="1138" loading="lazy" decoding="async">
+            <img src="img/whatsapp-chat-2.webp?v=20261106c" alt="Testimonianza WhatsApp Gianluca M. - Milano" width="640" height="1138" loading="lazy" decoding="async">
           </div>
 
           <!-- Card 3: Matteo R. · Torino -->
           <div class="wa-card">
-            <img src="img/whatsapp-chat-3.webp?v=20261106" alt="Testimonianza WhatsApp Matteo R. - Torino" width="640" height="1138" loading="lazy" decoding="async">
+            <img src="img/whatsapp-chat-3.webp?v=20261106c" alt="Testimonianza WhatsApp Matteo R. - Torino" width="640" height="1138" loading="lazy" decoding="async">
           </div>
 
           <!-- Card 4: Elena S. · Bologna -->
           <div class="wa-card">
-            <img src="img/whatsapp-chat-4.webp?v=20261106" alt="Testimonianza WhatsApp Elena S. - Bologna" width="640" height="1138" loading="lazy" decoding="async">
+            <img src="img/whatsapp-chat-4.webp?v=20261106c" alt="Testimonianza WhatsApp Elena S. - Bologna" width="640" height="1138" loading="lazy" decoding="async">
           </div>
 
           <!-- Card 5: Marco P. · Firenze -->
           <div class="wa-card">
-            <img src="img/whatsapp-chat-5.webp?v=20261106" alt="Testimonianza WhatsApp Marco P. - Firenze" width="640" height="1138" loading="lazy" decoding="async">
+            <img src="img/whatsapp-chat-5.webp?v=20261106c" alt="Testimonianza WhatsApp Marco P. - Firenze" width="640" height="1138" loading="lazy" decoding="async">
           </div>
 
           <!-- Card 6: Chiara V. · Napoli -->
           <div class="wa-card">
-            <img src="img/whatsapp-chat-6.webp?v=20261106" alt="Testimonianza WhatsApp Chiara V. - Napoli" width="640" height="1138" loading="lazy" decoding="async">
+            <img src="img/whatsapp-chat-6.webp?v=20261106c" alt="Testimonianza WhatsApp Chiara V. - Napoli" width="640" height="1138" loading="lazy" decoding="async">
           </div>
 
           <!-- Card 7: Davide L. · Verona -->
           <div class="wa-card">
-            <img src="img/whatsapp-chat-7.webp?v=20261106" alt="Testimonianza WhatsApp Davide L. - Verona" width="640" height="1138" loading="lazy" decoding="async">
+            <img src="img/whatsapp-chat-7.webp?v=20261106c" alt="Testimonianza WhatsApp Davide L. - Verona" width="640" height="1138" loading="lazy" decoding="async">
           </div>
         </div>
 
@@ -1644,12 +1644,12 @@
     if (waTrack && waPrevBtn && waNextBtn) {
       waPrevBtn.addEventListener('click', () => {
         const cardWidth = waTrack.querySelector('.wa-card')?.offsetWidth || 300;
-        waTrack.scrollBy({ left: -(cardWidth + 20), behavior: 'smooth' });
+        waTrack.scrollBy({ left: -(cardWidth + 14), behavior: 'smooth' });
       });
 
       waNextBtn.addEventListener('click', () => {
         const cardWidth = waTrack.querySelector('.wa-card')?.offsetWidth || 300;
-        waTrack.scrollBy({ left: (cardWidth + 20), behavior: 'smooth' });
+        waTrack.scrollBy({ left: (cardWidth + 14), behavior: 'smooth' });
       });
     }
 
