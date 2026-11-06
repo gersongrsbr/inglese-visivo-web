@@ -1044,24 +1044,52 @@
         </p>
       </div>
 
-            <div class="whatsapp-phones-container">
-        
-        <!-- Phone 1: Francesca B. da Roma -->
-        <div class="whatsapp-phone-card">
-          <picture>
-            <source srcset="img/whatsapp-chat-1.webp?v=20261105e" type="image/webp">
-            <img src="img/whatsapp-chat-1.webp?v=20261105e" alt="Testimonianza WhatsApp Francesca B. da Roma" width="390" height="760" loading="eager" decoding="async">
-          </picture>
+                  <!-- WhatsApp Testimonials Carousel (Clean 9:16 captures without phone frames, button navigation) -->
+      <div class="wa-carousel-container">
+        <button type="button" class="wa-carousel-btn wa-prev-btn" id="waPrevBtn" aria-label="Testimonianza precedente">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+
+        <div class="wa-carousel-track" id="waTrack">
+          <!-- Card 1: Francesca B. · Roma -->
+          <div class="wa-card">
+            <img src="img/whatsapp-chat-1.webp?v=20261106" alt="Testimonianza WhatsApp Francesca B. - Roma" width="640" height="1138" loading="eager" decoding="async">
+          </div>
+
+          <!-- Card 2: Gianluca M. · Milano -->
+          <div class="wa-card">
+            <img src="img/whatsapp-chat-2.webp?v=20261106" alt="Testimonianza WhatsApp Gianluca M. - Milano" width="640" height="1138" loading="lazy" decoding="async">
+          </div>
+
+          <!-- Card 3: Matteo R. · Torino -->
+          <div class="wa-card">
+            <img src="img/whatsapp-chat-3.webp?v=20261106" alt="Testimonianza WhatsApp Matteo R. - Torino" width="640" height="1138" loading="lazy" decoding="async">
+          </div>
+
+          <!-- Card 4: Elena S. · Bologna -->
+          <div class="wa-card">
+            <img src="img/whatsapp-chat-4.webp?v=20261106" alt="Testimonianza WhatsApp Elena S. - Bologna" width="640" height="1138" loading="lazy" decoding="async">
+          </div>
+
+          <!-- Card 5: Marco P. · Firenze -->
+          <div class="wa-card">
+            <img src="img/whatsapp-chat-5.webp?v=20261106" alt="Testimonianza WhatsApp Marco P. - Firenze" width="640" height="1138" loading="lazy" decoding="async">
+          </div>
+
+          <!-- Card 6: Chiara V. · Napoli -->
+          <div class="wa-card">
+            <img src="img/whatsapp-chat-6.webp?v=20261106" alt="Testimonianza WhatsApp Chiara V. - Napoli" width="640" height="1138" loading="lazy" decoding="async">
+          </div>
+
+          <!-- Card 7: Davide L. · Verona -->
+          <div class="wa-card">
+            <img src="img/whatsapp-chat-7.webp?v=20261106" alt="Testimonianza WhatsApp Davide L. - Verona" width="640" height="1138" loading="lazy" decoding="async">
+          </div>
         </div>
 
-        <!-- Phone 2: Gianluca M. da Milano -->
-        <div class="whatsapp-phone-card">
-          <picture>
-            <source srcset="img/whatsapp-chat-3.webp?v=20261105e" type="image/webp">
-            <img src="img/whatsapp-chat-3.webp?v=20261105e" alt="Testimonianza WhatsApp Gianluca M. da Milano" width="390" height="760" loading="eager" decoding="async">
-          </picture>
-        </div>
-
+        <button type="button" class="wa-carousel-btn wa-next-btn" id="waNextBtn" aria-label="Testimonianza successiva">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
       </div>
     </div>
   </section>
@@ -1254,10 +1282,9 @@
           <ul class="plan-features-list">
             <li><span class="check-icon">✓</span> <strong>75 Mappe Mentali</strong> (Modulo 1: Grammatica Essenziale)</li>
             <li><span class="check-icon">✓</span> Formato PDF digitale ad alta risoluzione</li>
-            <li><span class="check-icon">✓</span> Bonus #1: Guida Tascabile per Viaggiare</li>
             <li><span class="check-icon">✓</span> Garanzia Soddisfatti o Rimborsati di 7 Giorni</li>
-            <li style="color: var(--text-light); text-decoration: line-through;"><span style="color: var(--text-light);">✕</span> 225 Mappe Avanzate & Phrasal Verbs</li>
-            <li style="color: var(--text-light); text-decoration: line-through;"><span style="color: var(--text-light);">✕</span> 4 Bonus Professionali Inclusi</li>
+            <li style="color: #DC2626; font-weight: 600;"><span style="color: #DC2626; font-weight: bold; margin-right: 6px;">✕</span> <span style="text-decoration: line-through;">225 Mappe Avanzate & Phrasal Verbs (NON Inclusi)</span></li>
+            <li style="color: #DC2626; font-weight: 600;"><span style="color: #DC2626; font-weight: bold; margin-right: 6px;">✕</span> <span style="text-decoration: line-through;">Tutti i 5 Bonus Esclusivi (NON Inclusi)</span></li>
           </ul>
 
           <button type="button" class="btn-cta btn-basic-muted" onclick="openBasicUpsellModal()" style="width: 100%; border: none; cursor: pointer;">
@@ -1608,6 +1635,23 @@
         document.getElementById(targetId).classList.add('active');
       });
     });
+
+        // 5. CAROUSEL TESTIMONIANZE WHATSAPP
+    const waTrack = document.getElementById('waTrack');
+    const waPrevBtn = document.getElementById('waPrevBtn');
+    const waNextBtn = document.getElementById('waNextBtn');
+
+    if (waTrack && waPrevBtn && waNextBtn) {
+      waPrevBtn.addEventListener('click', () => {
+        const cardWidth = waTrack.querySelector('.wa-card')?.offsetWidth || 300;
+        waTrack.scrollBy({ left: -(cardWidth + 20), behavior: 'smooth' });
+      });
+
+      waNextBtn.addEventListener('click', () => {
+        const cardWidth = waTrack.querySelector('.wa-card')?.offsetWidth || 300;
+        waTrack.scrollBy({ left: (cardWidth + 20), behavior: 'smooth' });
+      });
+    }
 
     // 4. FAQ ACCORDION INTERATTIVO
     const faqQuestions = document.querySelectorAll('.faq-question');
