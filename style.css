@@ -2481,3 +2481,113 @@ img {
   height: auto !important;
   display: block !important;
 }
+
+
+/* ==========================================================================
+   CARRUSEL CONTINUO DE 3 FILAS EN SENTIDOS OPUESTOS (CRO GATE P0)
+   ========================================================================== */
+.carousel-multi-container {
+  width: 100%;
+  overflow: hidden;
+  margin: 32px 0 24px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.carousel-multi-container::before, .carousel-multi-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+.carousel-multi-container::before {
+  left: 0;
+  background: linear-gradient(90deg, #0F172A 0%, transparent 100%);
+}
+.carousel-multi-container::after {
+  right: 0;
+  background: linear-gradient(-90deg, #0F172A 0%, transparent 100%);
+}
+
+.carousel-track-row {
+  display: flex;
+  gap: 14px;
+  width: max-content;
+  will-change: transform;
+}
+.carousel-track-row:hover {
+  animation-play-state: paused;
+}
+.carousel-track-left {
+  animation: scrollRowLeft 45s linear infinite;
+}
+.carousel-track-right {
+  animation: scrollRowRight 50s linear infinite;
+}
+
+@keyframes scrollRowLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes scrollRowRight {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.carousel-multi-card {
+  width: 300px;
+  max-width: 82vw;
+  background: #FFFFFF;
+  border-radius: 14px;
+  padding: 10px 10px 12px 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+.carousel-multi-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 16px 35px rgba(124, 58, 237, 0.45);
+}
+.carousel-multi-img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid #E2E8F0;
+  background: #FAF9F6;
+}
+.carousel-multi-title {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #1E293B;
+  margin-top: 8px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+  .carousel-multi-container {
+    gap: 10px;
+    margin: 20px 0;
+  }
+  .carousel-multi-card {
+    width: 250px;
+    padding: 8px 8px 10px 8px;
+  }
+  .carousel-multi-img {
+    height: 175px;
+  }
+  .carousel-multi-title {
+    font-size: 0.8rem;
+  }
+}
