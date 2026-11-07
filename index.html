@@ -1861,5 +1861,34 @@
     });
   </script>
 
+<script>
+(function() {
+  function passUtmsToCheckout() {
+    var search = window.location.search;
+    if (!search || search.length <= 1) return;
+    var params = new URLSearchParams(search.substring(1));
+    var links = document.querySelectorAll('a[data-utmify-checkout="true"], a[href*="checkout."]');
+    links.forEach(function(a) {
+      try {
+        var url = new URL(a.href, window.location.origin);
+        params.forEach(function(val, key) {
+          if (!url.searchParams.has(key)) {
+            url.searchParams.set(key, val);
+          }
+        });
+        a.href = url.toString();
+        a.setAttribute('target', '_self');
+        a.setAttribute('data-utmify-checkout', 'true');
+      } catch(e) {}
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', passUtmsToCheckout);
+  } else {
+    passUtmsToCheckout();
+  }
+  window.addEventListener('load', passUtmsToCheckout);
+})();
+</script>
 </body>
 </html>
